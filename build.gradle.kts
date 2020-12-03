@@ -19,15 +19,17 @@ buildscript {
 group = "com.espoto.kmmtest"
 version = "1.0-SNAPSHOT"
 
-repositories {
-    jcenter()
-    google()
-    mavenCentral()
-    maven(url = "https://jitpack.io")
-    maven(url = "https://dl.bintray.com/icerockdev/moko")
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+        maven(url = "https://jitpack.io")
+        maven(url = "https://dl.bintray.com/icerockdev/moko")
 
-    flatDir {
-        dirs("libs/compile")
+        flatDir {
+            dirs("libs/compile")
+        }
     }
 }
 

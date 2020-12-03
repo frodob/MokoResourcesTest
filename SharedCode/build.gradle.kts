@@ -49,9 +49,9 @@ kotlin {
 //        implementation("com.soywiz.korlibs.krypto:krypto:1.11.1")
                 implementation(Deps.Libs.MultiPlatform.klock)
 
-                implementation(Deps.Libs.MultiPlatform.mokoResources)
-//                implementation(Deps.Libs.MultiPlatform.mokoGraphics)
-//                implementation(Deps.Libs.MultiPlatform.mokoParcelize)
+                implementation(Deps.Libs.MultiPlatform.mokoResources.common)
+               implementation(Deps.Libs.MultiPlatform.mokoGraphics.common)
+               implementation(Deps.Libs.MultiPlatform.mokoParcelize.common)
             }
         }
         val commonTest by getting {
