@@ -1,8 +1,8 @@
 buildscript {
     repositories {
         gradlePluginPortal()
-        jcenter()
         google()
+        jcenter()
         mavenCentral()
         maven(url = "https://dl.bintray.com/icerockdev/plugins")
     }
@@ -21,8 +21,8 @@ version = "1.0-SNAPSHOT"
 
 allprojects {
     repositories {
-        jcenter()
         google()
+        jcenter()
         mavenCentral()
         maven(url = "https://jitpack.io")
         maven(url = "https://dl.bintray.com/icerockdev/moko")

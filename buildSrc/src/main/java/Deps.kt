@@ -4,22 +4,27 @@
 object Deps {
     object Version {
         const val kotlin = "1.4.21"
-
         const val gradle = "4.1.1"
-        const val androidAppCompat = "1.1.0"
+
+        const val androidAppCompat = "1.2.0"
         const val material = "1.2.1"
         const val recyclerView = "1.1.0"
         const val swipeRefreshLayout = "1.1.0"
         const val constraintLayout = "2.0.0"
         const val lifecycle = "2.2.0"
         const val glide = "4.9.0"
+
+        const val compose = "1.0.0-alpha10"
+        const val nav_compose = "1.0.0-alpha05"
+        const val accompanist = "0.4.2"
+
         const val espressoCore = "3.2.0"
         const val testRunner = "1.2.0"
         const val testExtJunit = "1.1.1"
 
-        const val ktorClient = "1.4.2"              // https://github.com/ktorio/ktor
-        const val coroutines = "1.3.9-native-mt"    // https://github.com/Kotlin/kotlinx.coroutines     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
-        const val kotlinxSerialization = "1.0.0-RC" // https://github.com/Kotlin/kotlinx.serialization  // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-core
+        const val ktorClient = "1.5.0"              // https://github.com/ktorio/ktor
+        const val coroutines = "1.4.2-native-mt"    // https://github.com/Kotlin/kotlinx.coroutines     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
+        const val kotlinxSerialization = "1.0.1"    // https://github.com/Kotlin/kotlinx.serialization  // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-core
         const val kotlinxDateTime = "0.1.0"         // https://github.com/Kotlin/kotlinx-datetime
 
         const val sqlDelight = "1.4.4"              // https://github.com/cashapp/sqldelight
@@ -28,13 +33,11 @@ object Deps {
         const val prefs = "1.2.0"                   // https://github.com/florent37/Multiplatform-Preferences
         const val krypto = "1.12.0"                 // https://github.com/korlibs/krypto  // https://mvnrepository.com/artifact/com.soywiz.korlibs.krypto/krypto
 
-        const val detekt = "1.12.0"
-
         const val mokoMPP = "0.8.0"
-        const val mokoGraphics = "0.5.0"
-        const val mokoParcelize = "0.5.0"
-        const val mokoResources = "0.14.0"
-        const val mokoMvvm = "0.9.0"
+        const val mokoGraphics = "0.5.0"            // https://github.com/icerockdev/moko-graphics
+        const val mokoParcelize = "0.5.0"           // https://github.com/icerockdev/moko-parcelize
+        const val mokoResources = "0.14.0"          // https://github.com/icerockdev/moko-resources
+        const val mokoMvvm = "0.9.0"                // https://github.com/icerockdev/moko-mvvm
         const val mokoErrors = "0.3.0"
         const val mokoNetwork = "0.8.0"
         const val mokoUnits = "0.4.1"
@@ -91,11 +94,6 @@ object Deps {
             id = "dev.icerock.mobile.multiplatform-units",
             module = "dev.icerock.moko:units-generator:${Version.mokoUnits}"
         )
-
-        val detekt = GradlePlugin(
-            id = "io.gitlab.arturbosch.detekt",
-            version = Version.detekt
-        )
     }
 
     object Libs {
@@ -104,40 +102,78 @@ object Deps {
             const val appCompat = "androidx.appcompat:appcompat:${Version.androidAppCompat}"
             const val material = "com.google.android.material:material:${Version.material}"
             const val recyclerView = "androidx.recyclerview:recyclerview:${Version.recyclerView}"
-            const val swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Version.swipeRefreshLayout}"
+            const val swipeRefreshLayout =
+                "androidx.swiperefreshlayout:swiperefreshlayout:${Version.swipeRefreshLayout}"
             const val cardView = "androidx.cardview:cardview:1.0.0"
-            const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Version.constraintLayout}"
+            const val constraintLayout =
+                "androidx.constraintlayout:constraintlayout:${Version.constraintLayout}"
             const val gson = "com.google.api-client:google-api-client-gson:1.30.2"
 
             const val glide = "com.github.bumptech.glide:glide:${Version.glide}"
             const val exif = "androidx.exifinterface:exifinterface:1.1.0"
             const val lifecycle = "androidx.lifecycle:lifecycle-extensions:${Version.lifecycle}"
+            const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.lifecycle}"
             const val ktorClientOkHttp = "io.ktor:ktor-client-okhttp:${Version.ktorClient}"
             const val volley = "com.android.volley:volley:1.1.1"
             const val jodaTime = "net.danlew:android.joda:2.10.3"
+
+            object Compose {
+                const val ui = "androidx.compose.ui:ui:${Version.compose}"
+                const val tooling = "androidx.ui:ui-tooling:${Version.compose}"
+
+                // Tooling support (Previews, etc.)
+                const val uiTooling = "androidx.compose.ui:ui-tooling:${Version.compose}"
+                const val uiGraphics = "androidx.compose.ui:ui-graphics:${Version.compose}"
+
+                // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
+                const val foundationLayout =
+                    "androidx.compose.foundation:foundation-layout:${Version.compose}"
+
+                // Material Design
+                const val material = "androidx.compose.material:material:${Version.compose}"
+
+                // Material design icons
+                const val materialIcons =
+                    "androidx.compose.material:material-icons-core:${Version.compose}"
+                const val materialIconsExtended =
+                    "androidx.compose.material:material-icons-extended:${Version.compose}"
+
+                // Integration with observables
+                const val runtimeLivedata =
+                    "androidx.compose.runtime:runtime-livedata:${Version.compose}"
+                const val runtimeRx = "androidx.compose.runtime:runtime-rxjava2:${Version.compose}"
+
+                const val runtime = "androidx.compose.runtime:runtime:${Version.compose}"
+                const val layout =
+                    "androidx.compose.foundation:foundation-layout:${Version.compose}"
+                const val animation = "androidx.compose.animation:animation:${Version.compose}"
+
+//                const val navigation = "androidx.navigation:navigation-compose:${Version.nav_compose}"
+//                const val accompanist= "dev.chrisbanes.accompanist:accompanist-coil:${Version.accompanist}"
+
+                const val uiTest = "androidx.compose.ui:ui-test-junit4:${Version.compose}"
+            }
 
             object Tests {
                 const val espressoCore =
                     "androidx.test.espresso:espresso-core:${Version.espressoCore}"
                 const val kotlinTestJUnit =
                     "org.jetbrains.kotlin:kotlin-test-junit:${Version.kotlin}"
-                const val testCore =
-                    "androidx.test:core:1.3.0"
-                const val robolectric =
-                    "org.robolectric:robolectric:4.3"
-                const val testRunner =
-                    "androidx.test:runner:${Version.testRunner}"
-                const val testRules =
-                    "androidx.test:rules:${Version.testRunner}"
-                const val testExtJunit =
-                    "androidx.test.ext:junit:${Version.testExtJunit}"
+                const val testCore = "androidx.test:core:1.3.0"
+                const val robolectric = "org.robolectric:robolectric:4.3"
+                const val testRunner = "androidx.test:runner:${Version.testRunner}"
+                const val testRules = "androidx.test:rules:${Version.testRunner}"
+                const val testExtJunit = "androidx.test.ext:junit:${Version.testExtJunit}"
             }
         }
 
         object MultiPlatform {
-            const val kotlinSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:${Version.kotlinxSerialization}"
-            const val kotlinxDateTime = "org.jetbrains.kotlinx:kotlinx-datetime:${Version.kotlinxDateTime}"
-            const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutines}"
+            const val kotlinSerialization =
+                "org.jetbrains.kotlinx:kotlinx-serialization-core:${Version.kotlinxSerialization}"
+            const val kotlinxDateTime =
+                "org.jetbrains.kotlinx:kotlinx-datetime:${Version.kotlinxDateTime}"
+            const val coroutines =
+                "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutines}"
 
             const val klock = "com.soywiz.korlibs.klock:klock:${Version.klock}"
             const val uuid = "com.benasher44:uuid:${Version.uuid}"
@@ -155,13 +191,13 @@ object Deps {
             val mokoMedia = "dev.icerock.moko:media:${Version.mokoMedia}".mpl
             val mokoUnits = "dev.icerock.moko:units:${Version.mokoUnits}".mpl
             val mokoFields = "dev.icerock.moko:fields:${Version.mokoFields}".mpl
-            val multiplatformSettings = "com.russhwolf:multiplatform-settings:${Version.multiplatformSettings}".mpl
+            val multiplatformSettings =
+                "com.russhwolf:multiplatform-settings:${Version.multiplatformSettings}".mpl
 
             val napier = "com.github.aakira:napier:${Version.napier}".mpl
 
             object Tests {
-                const val kotlinTest =
-                    "org.jetbrains.kotlin:kotlin-test-common:${Version.kotlin}"
+                const val kotlinTest = "org.jetbrains.kotlin:kotlin-test-common:${Version.kotlin}"
                 const val kotlinTestAnnotations =
                     "org.jetbrains.kotlin:kotlin-test-annotations-common:${Version.kotlin}"
             }
@@ -178,16 +214,13 @@ object Deps {
 
         object SqlDelight {
             const val runtime = "com.squareup.sqldelight:runtime:${Version.sqlDelight}"
-            const val coroutineExtensions = "com.squareup.sqldelight:coroutines-extensions:${Version.sqlDelight}"
+            const val coroutineExtensions =
+                "com.squareup.sqldelight:coroutines-extensions:${Version.sqlDelight}"
 
             const val androidDriver = "com.squareup.sqldelight:android-driver:${Version.sqlDelight}"
             const val nativeDriver = "com.squareup.sqldelight:native-driver:${Version.sqlDelight}"
-            const val nativeDriverMacos = "com.squareup.sqldelight:native-driver-macosx64:${Version.sqlDelight}"
-        }
-
-        object Detekt {
-            const val detektFormatting =
-                "io.gitlab.arturbosch.detekt:detekt-formatting:${Version.detekt}"
+            const val nativeDriverMacos =
+                "com.squareup.sqldelight:native-driver-macosx64:${Version.sqlDelight}"
         }
     }
 
