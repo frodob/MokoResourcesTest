@@ -2,5 +2,21 @@
 <resources>
 
     <string name="helloMoko">Hello Moko!</string>
+    <plural name="my_plural">
+        <item quantity="zero">zero</item>
+        <item quantity="one">one</item>
+        <item quantity="two">two</item>
+        <item quantity="few">few</item>
+        <item quantity="many">many</item>
+        <item quantity="other">other</item>
+    </plural>
+    <plurals name="my_plural">
+        <item quantity="zero">zero</item>
+        <item quantity="one">one</item>
+        <item quantity="two">two</item>
+        <item quantity="few">few</item>
+        <item quantity="many">many</item>
+        <item quantity="other">other</item>
+    </plurals>
 
 </resources>
