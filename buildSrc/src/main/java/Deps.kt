@@ -3,7 +3,7 @@
  */
 object Deps {
     object Version {
-        const val kotlin = "1.4.10"
+        const val kotlin = "1.4.21"
 
         const val gradle = "4.1.1"
         const val androidAppCompat = "1.1.0"
@@ -31,10 +31,10 @@ object Deps {
         const val detekt = "1.12.0"
 
         const val mokoMPP = "0.8.0"
-        const val mokoGraphics = "0.4.0"
-        const val mokoParcelize = "0.4.0"
-        const val mokoResources = "0.13.1"
-        const val mokoMvvm = "0.8.0"
+        const val mokoGraphics = "0.5.0"
+        const val mokoParcelize = "0.5.0"
+        const val mokoResources = "0.14.0"
+        const val mokoMvvm = "0.9.0"
         const val mokoErrors = "0.3.0"
         const val mokoNetwork = "0.8.0"
         const val mokoUnits = "0.4.1"

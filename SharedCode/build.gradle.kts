@@ -50,8 +50,8 @@ kotlin {
                 implementation(Deps.Libs.MultiPlatform.klock)
 
                 implementation(Deps.Libs.MultiPlatform.mokoResources.common)
-               implementation(Deps.Libs.MultiPlatform.mokoGraphics.common)
-               implementation(Deps.Libs.MultiPlatform.mokoParcelize.common)
+                implementation(Deps.Libs.MultiPlatform.mokoGraphics.common)
+                implementation(Deps.Libs.MultiPlatform.mokoParcelize.common)
             }
         }
         val commonTest by getting {

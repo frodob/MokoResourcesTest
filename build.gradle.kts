@@ -7,7 +7,7 @@ buildscript {
         maven(url = "https://dl.bintray.com/icerockdev/plugins")
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:${Deps.Version.gradle}")
+        classpath("com.android.tools.build:gradle:7.0.0-alpha04")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Deps.Version.kotlin}")
         classpath("org.jetbrains.kotlin:kotlin-serialization:${Deps.Version.kotlin}")
         classpath("com.squareup.sqldelight:gradle-plugin:${Deps.Version.sqlDelight}")
