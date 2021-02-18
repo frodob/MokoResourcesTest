@@ -88,12 +88,24 @@ kotlin {
     }
 
     cocoapods {
-        summary = "Shared espoto module for Android and iOS"
-        homepage = "https://espoto.tabgametest.de"
+        ios.deploymentTarget = "13.0"
+        summary = "Shared module for Android and iOS"
+        homepage = "..."
+        // You can change the name of the produced framework.
+        // By default, it is the name of the Gradle project.
+        frameworkName = "SharedCode"
+
+        // https://youtrack.jetbrains.com/issue/KT-40594
+        // https://stackoverflow.com/questions/60126503/how-to-add-thirdparty-ios-pod-library-into-kotlin-native-project-getting-error
 //        pod("AppCenter", "~> 3.0.0")
 //        pod("CocoaLumberjack", "3.5.3")
-//        pod("Zip", "~> 1.1")
+//        pod("UnzipKit")
 //        pod("Starscream", "4.0.0")
+
+        // https://kotlinlang.org/docs/native-cocoapods.html#add-a-dependency-on-a-pod-library-from-the-cocoapods-repository
+//        pod("AFNetworking") {
+//            version = "~> 4.0.1"
+//        }
     }
 }
 
@@ -104,7 +116,7 @@ sqldelight {
 }
 
 multiplatformResources {
-    multiplatformResourcesPackage = "com.espoto.resources" // required
+    multiplatformResourcesPackage = "resources.generated" // required
 //    iosBaseLocalizationRegion = "en" // optional, default "en"
 //    multiplatformResourcesSourceSet = "commonClientMain"  // optional, default "commonMain"
 }

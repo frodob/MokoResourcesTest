@@ -1,4 +1,4 @@
-package com.espoto.mokoresourcestest.SharedCode
+package com.mokoresourcestest
 
 expect class Platform() {
     val platform: String

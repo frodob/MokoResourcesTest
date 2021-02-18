@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+project 'iosApp.xcodeproj'
+
+# source 'https://github.com/CocoaPods/Specs.git'
+# use_frameworks!
+
+abstract_target 'ios' do
+
+  target 'iosApp' do
+    pod 'SharedCode', :path => '../SharedCode'  # if it does not install: https://stackoverflow.com/questions/17668265/gradlew-permission-denied
+  end
+
+end

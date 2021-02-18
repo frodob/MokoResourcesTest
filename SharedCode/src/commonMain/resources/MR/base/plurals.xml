@@ -1,13 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <plural name="my_plural">
-        <item quantity="zero">zero</item>
-        <item quantity="one">one</item>
-        <item quantity="two">two</item>
-        <item quantity="few">few</item>
-        <item quantity="many">many</item>
-        <item quantity="other">other</item>
+    <!-- VARIOUS -->
+
+
+    <!-- TIME -->
+    <plural name="days">
+        <item quantity="one">Day</item>
+        <item quantity="other">Days</item>
     </plural>
+    <plural name="hours">
+        <item quantity="one">Hour</item>
+        <item quantity="other">Hours</item>
+    </plural>
+    <plural name="minutes">
+        <item quantity="one">Minute</item>
+        <item quantity="other">Minutes</item>
+    </plural>
+    <plural name="seconds">
+        <item quantity="one">Second</item>
+        <item quantity="other">Seconds</item>
+    </plural>
+
+    <!-- PERSON -->
+
+    <!-- REGISTER -->
+
+    <!-- PROFILE -->
+
+    <!-- ANONYMOUS PLAYER Dialog -->
+
+    <!-- LOGIN -->
+
+    <!-- FORGOT PW -->
+
+    <!-- EVENTS -->
+    <plural name="event">
+        <item quantity="one">Event</item>
+        <item quantity="other">Events</item>
+    </plural>
+    <plural name="eventInLine">
+        <item quantity="one">event</item>
+        <item quantity="other">events</item>
+    </plural>
+
+    <!-- EASY EVENT AND EVENT LIST -->
+
+    <!-- WelcomeDialog -->
+
+    <!-- MENU -->
+
+    <!-- DEMO -->
+
+    <!-- SPECIAL -->
+
+    <!-- GPS -->
+
+    <!-- TASK and TASK LIST -->
+
+    <!-- TASK DETAILS -->
+
+    <!-- Password Dialog -->
+
+    <!-- SOLUTION Dialog -->
+    <plural name="solveMcFull">
+        <item quantity="one">You can only select %d answer</item>
+        <item quantity="other">You can only select %d answers</item>
+    </plural>
+    <plural name="solveMcMissingAnswers">
+        <item quantity="one">You need %d more answer to solve this %s</item>
+        <item quantity="other">You need %d more answers to solve this %s</item>
+    </plural>
+    <plural name="solveVotingMissingMinVote">
+        <item quantity="one">You need at least %d answer to submit this vote</item>
+        <item quantity="other">You need at least %d answers to submit this vote</item>
+    </plural>
+    <plural name="solveVotingMissingStars">
+        <item quantity="one">You need %d more star to submit this vote</item>
+        <item quantity="other">You need %d more stars to submit this vote</item>
+    </plural>
+    <plural name="solveVotingMissingVotes">
+        <item quantity="one">You need %d more vote to submit this vote</item>
+        <item quantity="other">You need %d more votes to submit this vote</item>
+    </plural>
+    <plural name="solveVotingStarsFull">
+        <item quantity="one">You have only %d star to spend</item>
+        <item quantity="other">You have only %d stars to spend</item>
+    </plural>
+    <plural name="solveVotingVotesFull">
+        <item quantity="one">You have only %d vote to spend</item>
+        <item quantity="other">You have only %d votes to spend</item>
+    </plural>
+
+    <!-- SOLVE CONTROLLER -->
+    <plural name="triesLeft">
+        <item quantity="one">Try again, you still have %d attempt.</item>
+        <item quantity="other">Try again, you still have %d attempts.</item>
+    </plural>
+
+    <!-- QR CODE -->
+
+    <!-- AR -->
+
+    <!-- STATS -->
+
+    <!-- STATISTIC -->
+
+    <!-- OPERATOR -->
+
+    <!-- CHAT -->
+
+    <!-- PhotoUpload -->
+
+    <!-- VideoUpload -->
+
+    <!-- SETTINGS -->
+    <!--    -->
+    <plural name="synchronizeChat">
+        <item quantity="one">%d chat or position message is not synchronized</item>
+        <item quantity="other">%d chat or position messages are not synchronized</item>
+    </plural>
+    <plural name="synchronizeMedia">
+        <item quantity="one">%d media file is not synchronized</item>
+        <item quantity="other">%d media files are not synchronized</item>
+    </plural>
+    <plural name="synchronizeSolutions">
+        <item quantity="one">%d solution trial is not synchronized</item>
+        <item quantity="other">%d solution trials are not synchronized</item>
+    </plural>
+
+    <!-- LANGUAGES -->
+
+    <!-- DEVICE INFORMATION -->
+
+    <!-- USECASES -->
+
+    <!-- JSON Response error (codes), lookup using "error_code_"+errorCode -->
+
+
+    <!-- WHAT?!?-->
+    <!---->
 
 </resources>

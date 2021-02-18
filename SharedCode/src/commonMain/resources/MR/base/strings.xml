@@ -1,6 +1,474 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="helloMoko">Hello Moko!</string>
+    <!-- VARIOUS -->
+    <string name="agree">Agree</string>
+    <string name="accept">Accept</string>
+    <string name="attention">Attention</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="continueMy">Continue</string>
+    <string name="done">Done</string>
+    <string name="dots">…</string>
+    <string name="edit">Edit</string>
+    <string name="end">End</string>
+    <string name="exit">Exit</string>
+    <string name="later">Later</string>
+    <string name="loading">Loading</string>
+    <string name="more">More</string>
+    <string name="next">Next</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="show">Show</string>
+    <string name="start">Start</string>
+    <string name="success">Success</string>
+    <string name="synchronize">Synchronise</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="version">Version</string>
+    <string name="yes">Yes</string>
+
+    <string name="imprint">Imprint</string>
+    <string name="licenses">Licenses</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="teamsAndConditions">Terms and Conditions</string>
+
+    <!-- TIME -->
+    <plural name="days">
+        <item quantity="one">Day</item>
+        <item quantity="other">Days</item>
+    </plural>
+    <plural name="hours">
+        <item quantity="one">Hour</item>
+        <item quantity="other">Hours</item>
+    </plural>
+    <plural name="minutes">
+        <item quantity="one">Minute</item>
+        <item quantity="other">Minutes</item>
+    </plural>
+    <plural name="seconds">
+        <item quantity="one">Second</item>
+        <item quantity="other">Seconds</item>
+    </plural>
+    <string name="timeRemaining">remaining</string>
+    <string name="timeCountdownTitle">Remaining playing time</string>
+
+    <!-- PERSON -->
+    <string name="city">City</string>
+    <string name="female">Female</string>
+    <string name="firstname">First Name</string>
+    <string name="gender">Gender</string>
+    <string name="lastname">Last Name</string>
+    <string name="male">Male</string>
+    <string name="number">No.</string>
+    <string name="street">Street</string>
+    <string name="zipcode">Area Code</string>
+
+    <!-- REGISTER -->
+    <string name="registerTitle">Register</string>
+    <string name="registerBtn">Register</string>
+    <string name="registerMessage">To register it is required to give yourself a user name, enter your mail and choose a password.</string>
+    <string name="registerUsername">Username (Required)</string>
+    <string name="registerEmail">Email (Required)</string>
+    <string name="registerPassword">Password (Required)</string>
+    <string name="registerPasswordConfirm">Confirm Password (Required)</string>
+    <string name="registerAccept">I agree to the</string>
+    <string name="registerAcceptContinue">and acknowledge the</string>
+    <string name="registerAcceptGTC">You must accept the terms and conditions to register.</string>
+    <string name="registerAcceptPP">You must accept the privacy policy to register.</string>
+    <string name="registerGTC">Terms and conditions accepted</string>
+    <string name="registerPP">Privacy policy accepted</string>
+    <string name="registerMemberNumber">Member number</string>
+    <string name="registerMsgOk">Registration successful! You will receive an email with an activation link shortly.</string>
+
+    <!-- PROFILE -->
+    <string name="profileAppVersion">Version</string>
+    <string name="profileHere">here.</string>
+    <string name="profileImprint">Find the legal notice</string>
+    <string name="profileLicenses">Find the licenses</string>
+    <string name="profilePrivacyPolicy">Find the privacy policy</string>
+    <string name="profileSave">Save</string>
+    <string name="profileSentOk">Profile successfully updated.</string>
+    <string name="profileToDelete">To delete your account, please contact:</string>
+
+    <!-- ANONYMOUS PLAYER Dialog -->
+    <string name="demoAlreadyUsed">You have already had a demo account. Use a registered account to continue.</string>
+    <string name="demoAlreadyUsedDelete">You already have a demo account. If you continue, a new demo account will be created and you will not be able to access your old demo account.</string>
+    <string name="demoQuestion">Please set a username for yourself.</string>
+    <string name="demoQuestionRetry">That username is already in use.</string>
+    <string name="demoLoginUnauthorizedEvent">You do not have access to this %s.\nYou will be redirected to our main game.\nPlease inform the operator if you want to play a private game.</string>
+
+    <!-- LOGIN -->
+    <string name="loginTitle">Login</string>
+    <string name="login">Login</string>
+    <string name="loginMessage">Please log in or continue without registering.</string>
+    <string name="loginEmail">Email</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginWithoutRegistration">Without registration</string>
+
+    <!-- FORGOT PW -->
+    <string name="forgotPwRequest">Request password</string>
+    <string name="forgotPwMessage">Enter your email address to reset the password.</string>
+    <string name="forgotPwAnswer">We\'ve sent you an email with a link to reset your password.</string>
+
+    <!-- EVENTS -->
+    <plural name="event">
+        <item quantity="one">Event</item>
+        <item quantity="other">Events</item>
+    </plural>
+    <plural name="eventInLine">
+        <item quantity="one">event</item>
+        <item quantity="other">events</item>
+    </plural>
+    <string name="eventInLineWith">an event</string>
+    <string name="eventList">Event List</string>
+    <string name="eventListInLine">event list</string>
+
+    <!-- EASY EVENT AND EVENT LIST -->
+    <string name="eventNew">New %s</string>
+    <string name="easyEventMessage">Join the main game or select %s from the %s.</string>
+    <string name="easyEventContinue">Continue last %s</string>
+    <string name="easyEventAlternative">Alternative you can enter %s with password or scan a QR-Code.</string>
+<!--    <string name="easyEventScan">Scan a new %s</string>-->
+    <string name="eventsActive">Active %s</string>
+    <string name="eventsExpired">Expired %s</string>
+    <string name="eventsMy">My %s</string>
+    <string name="eventsPublic">Public %s</string>
+    <string name="eventsPremium">Premium %s</string>
+    <string name="eventsTimeLeft">%s time left</string>
+    <string name="eventsFree">Free</string>
+    <string name="eventChanged">%s has changed.</string>
+
+    <!-- WelcomeDialog -->
+    <string name="welcomeTeamTitle">Name</string>
+    <string name="welcomeTeamMessage">Under which name will you participate?</string>
+    <string name="welcomeTeamPlaceholder">Enter name</string>
+    <string name="welcomeTeamError">Invalid name</string>
+    <string name="welcomeParticipantsTitle">Participants</string>
+    <string name="welcomeParticipantsMessage">Who will participate? Enter the names of the participants.\nMultiple entries possible.</string>
+    <string name="welcomeParticipantsPlaceholder">Enter participants name</string>
+    <string name="welcomeParticipantsError">Please enter at least one participant name</string>
+    <string name="welcomeEmailTitle">Access to your experiences</string>
+    <string name="welcomeEmailMessage">To have access to images and videos after your experience, please enter your email adresses.\nMultiple entries possible.</string>
+    <string name="welcomeEmailPlaceholder">Enter email address</string>
+    <string name="welcomeEmailError">Invalid email address</string>
+    <string name="welcomeDone">Create Team</string>
+
+    <!-- MENU -->
+    <string name="menuBriefing">Information</string>
+    <string name="menuChat">Chat</string>
+    <string name="menuChatNewRoom">New Room</string>
+    <string name="menuChatEditRoom">Edit Room</string>
+    <string name="menuEmergency">First Aid</string>
+    <string name="menuHighScore">High Score</string>
+    <string name="menuLogin">Sign In</string>
+    <string name="menuMap">Map</string>
+    <string name="menuOpCall">OP-Call</string>
+    <string name="menuProfile">Profile</string>
+    <string name="menuStatistics">Statistics</string>
+    <string name="menuTask">Task</string>
+    <string name="menuTaskList">Tasks</string>
+    <string name="menuTutorial">Tutorial</string>
+    <string name="menuPhoto">Photo</string>
+    <string name="menuQR">QR</string>
+    <string name="menuAR">AR</string>
+    <string name="menuPassword">PW</string>
+
+    <!-- DEMO -->
+    <string name="gameInfo">Game-Info</string>
+    <string name="demoTitle">Demo Mode</string>
+    <string name="demoMessage">This event is running in demo mode</string>
+
+    <!-- SPECIAL -->
+    <string name="dialogExitReally">Do you really want to leave the current game?</string>
+    <string name="dialogNewEventMessage">%d data packages have not been sent yet. If you still want to select another %s, your current progress might get lost.</string>
+    <string name="dialogNoMagnetSensorMessage">This device does not have a magnetic sensor.</string>
+    <string name="dialogNoMagnetSensorTitle">Compass not available.</string>
+
+    <!-- GPS -->
+    <string name="gpsContinue">Continue without GPS?</string>
+    <string name="gpsEnable">This app would like to use your current location. Please enable GPS</string>
+    <string name="gpsNoSignal">No GPS signal</string>
+    <string name="gpsNotEnabled">Your position has changed to the event\'s position. Distance calculations will not be correct</string>
+
+    <!-- TASK and TASK LIST -->
+    <string name="task">Task</string>
+    <string name="taskDistance">Distance</string>
+    <string name="taskName">Name</string>
+    <string name="taskNr">No.</string>
+    <string name="taskPoints">Points</string>
+    <string name="taskTabSpot">%1s: %2s</string>
+    <string name="taskTaskName">Tab Spot</string>
+    <string name="taskTime">Time</string>
+    <string name="taskType">Type</string>
+
+    <!-- TASK DETAILS -->
+    <string name="taskActive">Go To %s</string>
+    <string name="taskActiveVoting">Vote</string>
+    <string name="taskCheckin">Checkin</string>
+    <string name="taskDetail">Detail</string>
+    <string name="taskSolution">Solution</string>
+    <string name="taskEventNotActive">Event not active</string>
+    <string name="taskFailed">Failed</string>
+    <string name="taskInactive">Inactive</string>
+    <string name="taskNotInRange">Note: You must be within %d metres to access this information.</string>
+    <string name="taskPass">Pass</string>
+    <string name="taskPassed">Passed</string>
+    <string name="taskPictures">Pictures</string>
+    <string name="taskSolve">Solve %s</string>
+    <string name="taskSolveVoting">Vote</string>
+    <string name="taskSolved">Solved</string>
+    <string name="taskSolvedVoting">Voted</string>
+    <string name="taskTooFar">You must be within %d metres of this point.</string>
+
+    <!-- Password Dialog -->
+    <string name="passwordEnter">Please enter password</string>
+    <string name="passwordWrong">Wrong password!</string>
+
+    <!-- SOLUTION Dialog -->
+    <string name="solveCorrectSolution">Congratulations! Your answer was correct!</string>
+    <string name="solveCorrectVoting">Thanks for your vote</string>
+    <string name="solveMcEmpty">Please select at least one answer to solve this %s</string>
+    <plural name="solveMcFull">
+        <item quantity="one">You can only select %d answer</item>
+        <item quantity="other">You can only select %d answers</item>
+    </plural>
+    <plural name="solveMcMissingAnswers">
+        <item quantity="one">You need %d more answer to solve this %s</item>
+        <item quantity="other">You need %d more answers to solve this %s</item>
+    </plural>
+    <string name="solveMcMissingAnswerExact">Please select one answer to solve this %s</string>
+    <string name="solveTextEmpty">Please enter an answer to solve this %s</string>
+    <string name="solveTextEmptyVoting">Please enter an answer to submit this vote</string>
+    <string name="solveTitle">Answer</string>
+    <string name="solveVotingEmptyDialog">Are you sure you want to submit an empty vote?</string>
+    <plural name="solveVotingMissingMinVote">
+        <item quantity="one">You need at least %d answer to submit this vote</item>
+        <item quantity="other">You need at least %d answers to submit this vote</item>
+    </plural>
+    <plural name="solveVotingMissingStars">
+        <item quantity="one">You need %d more star to submit this vote</item>
+        <item quantity="other">You need %d more stars to submit this vote</item>
+    </plural>
+    <plural name="solveVotingMissingVotes">
+        <item quantity="one">You need %d more vote to submit this vote</item>
+        <item quantity="other">You need %d more votes to submit this vote</item>
+    </plural>
+    <plural name="solveVotingStarsFull">
+        <item quantity="one">You have only %d star to spend</item>
+        <item quantity="other">You have only %d stars to spend</item>
+    </plural>
+    <plural name="solveVotingVotesFull">
+        <item quantity="one">You have only %d vote to spend</item>
+        <item quantity="other">You have only %d votes to spend</item>
+    </plural>
+    <string name="solveWrongSolution">Unfortunately, your answer was not correct</string>
+
+    <!-- SOLVE CONTROLLER -->
+    <string name="correctWas">The correct answer was:</string>
+    <string name="correctWasMedia">Time is up!</string>
+    <plural name="triesLeft">
+        <item quantity="one">Try again, you still have %d attempt.</item>
+        <item quantity="other">Try again, you still have %d attempts.</item>
+    </plural>
+    <string name="triesLeftMany">Try again.</string>
+
+    <!-- QR CODE -->
+    <string name="qrAnotherQr">This QR code can not be used here!</string>
+    <string name="qrTaskNotFound">There is no %s for this QR code.</string>
+
+    <!-- AR -->
+    <string name="arDidNotFinishLoading">AR elements were only loaded to %d%%. Please try again later.</string>
+
+    <!-- STATS -->
+    <string name="statsTeam">Team</string>
+    <string name="statsTeamName">Team Name</string>
+    <string name="statsRank">Rank</string>
+    <string name="statsSolved">Solved</string>
+    <string name="statsNotSolved">Failed</string>
+    <string name="statsAverage">Average</string>
+    <string name="statsProgress">Game Progress</string>
+    <string name="statsUnfinished">Unfinished</string>
+
+    <!-- STATISTIC -->
+    <string name="statisticCompare">Compare</string>
+    <string name="statisticMyTeam">My Team</string>
+    <string name="statisticOtherTeam">Other Team</string>
+    <string name="statisticDistance">Distance</string>
+    <string name="statisticOpen">Open</string>
+    <string name="statisticNoData">No data available</string>
+    <string name="statisticNoHighScore">The high score is currently unavailable</string>
+    <string name="statisticNoStatistic">No statistics</string>
+    <string name="statisticNotInHighScore">Solve a few tasks first</string>
+    <string name="statisticTeamNotInHighScore">This team needs to solve a few tasks first.</string>
+
+    <!-- OPERATOR -->
+    <string name="operator">Operator</string>
+    <string name="operatorSend">Send</string>
+    <string name="operatorMe">Me</string>
+    <string name="operatorTitle">Operator Call</string>
+    <string name="operatorIsSending">is sending</string>
+
+    <!-- CHAT -->
+    <string name="chatActivated">%s activated</string>
+    <string name="chatActivatedLocal">activated the chat room.</string>
+    <string name="chatAddChatroom">New chat room %s</string>
+    <string name="chatAddChatroomAlreadyExists">A chat room with these members already exists</string>
+    <string name="chatAddName">Please enter a chat room name.</string>
+    <string name="chatAddRoomSelect">Select teams for chat room.</string>
+    <string name="chatAddSelect">Please select a team.</string>
+    <string name="chatConnecting">Connecting …</string>
+    <string name="chatCreate">Create chat room.</string>
+    <string name="chatDeactivated">%s deactivated</string>
+    <string name="chatDeactivatedLocal">deactivated the chat room.</string>
+    <string name="chatDeactivatedText">Chat room deactivated.</string>
+    <string name="chatEmpty">There are no chat rooms.</string>
+    <string name="chatEmptyDeactivated">Chat rooms can only be created by the operator.</string>
+    <string name="chatLeave">Leave chat room</string>
+    <string name="chatLeaveSure">Are you sure you want to leave this chat room?</string>
+    <string name="chatNewMessage">New Message in Chat room %s</string>
+    <string name="chatRemoveChatroom">Chat room removed: %s</string>
+    <string name="chatRoomName">Chat Room Name</string>
+    <string name="chatUserAdded">%1$s joined the chat room %2$s</string>
+    <string name="chatUserAddedLocal">joined the chat room.</string>
+    <string name="chatUserLeft">%1$s left the chat room %2$s</string>
+    <string name="chatUserLeftLocal">left the chat room.</string>
+
+    <!-- PhotoUpload -->
+    <string name="photoUploadError">Sorry. An error occurred during your photo upload.\nPlease try again.</string>
+    <string name="photoUploadSuccessful">Done! Your photo was uploaded successfully.</string>
+    <string name="photoUploadSuccessfulGallery">Done! Your photo was uploaded successfully.</string>
+
+    <!-- VideoUpload -->
+    <string name="videoUploadError">Sorry. An error occurred during your video upload.\nPlease try again.</string>
+    <string name="videoUploadSuccessful">Done! Your video was uploaded successfully.</string>
+
+    <!-- SETTINGS -->
+    <string name="settingsMoreEvents">More %s</string>
+    <string name="settingsPackAndGo">Pack and Go</string>
+    <string name="settingsLanguage">Language</string>
+    <string name="settingsDeviceInformation">Device Information</string>
+    <string name="settingsLogout">Logout</string>
+    <string name="settingsNotSynchronized">Some solution attempts have not been sent yet. Please try again later.</string>
+    <!--    -->
+    <string name="synchronizeAll">All Solution trials are synchronized</string>
+    <string name="synchronizeAuthenticate">Sign in to synchronize data!</string>
+    <plural name="synchronizeChat">
+        <item quantity="one">%d chat or position message is not synchronized</item>
+        <item quantity="other">%d chat or position messages are not synchronized</item>
+    </plural>
+    <plural name="synchronizeMedia">
+        <item quantity="one">%d media file is not synchronized</item>
+        <item quantity="other">%d media files are not synchronized</item>
+    </plural>
+    <plural name="synchronizeSolutions">
+        <item quantity="one">%d solution trial is not synchronized</item>
+        <item quantity="other">%d solution trials are not synchronized</item>
+    </plural>
+    <string name="synchronizeTitle">Offline Statistics</string>
+
+    <!-- LANGUAGES -->
+    <string name="langEN">English</string>
+    <string name="langDE">German</string>
+    <string name="langBG">Bulgarian</string>
+    <string name="langCZ">Czech</string>
+    <string name="langDA">Danish</string>
+    <string name="langES">Spanish</string>
+    <string name="langFR">French</string>
+    <string name="langHE">Hebrew</string>
+    <string name="langHU">Hungarian</string>
+    <string name="langIT">Italian</string>
+    <string name="langNL">Dutch</string>
+    <string name="langNotAvailable">Sorry your device does not support Text-To-Speech for the current language</string>
+
+    <!-- DEVICE INFORMATION -->
+    <string name="deviceSystemVersion">System Version</string>
+    <string name="deviceAppVersion">System Version</string>
+    <string name="deviceSynchronisation">Synchronisation</string>
+    <string name="deviceUnsend">Unsend</string>
+    <string name="deviceUnsendResults">Results</string>
+    <string name="deviceUnsendMedia">Media</string>
+    <string name="deviceUnsendChat">Chat Mgs</string>
+
+    <!-- USECASES -->
+    <string name="loadMessageGetEventBranding">Loading event branding …</string>
+    <string name="loadMessageGetEventCoins">Loading waypoint icons …</string>
+    <string name="loadMessageGetEventFiles">Loading event data …</string>
+    <string name="loadMessageGetEventOffline">Loading event offline data …</string>
+    <string name="loadMessageGetPlayerEvents">Loading your events …</string>
+    <string name="loadMessageGetPlayer">Loading player data …</string>
+    <string name="loadMessageGetPlayerInfo">Loading player-statistics …</string>
+    <string name="loadMessageLogin">Login …</string>
+    <string name="loadMessageRegister">Registering …</string>
+    <string name="loadMessageRequestPasswordReset">Resetting password …</string>
+    <string name="loadMessageUpdateUser">Storing player data …</string>
+    <string name="loadMessageGetTasks">Loading task list …</string>
+    <string name="loadMessageCheckInTask">Checking in …</string>
+    <string name="loadMessageMediaGet">Requesting media …</string>
+    <string name="loadMessageSolve">Sending solution data …</string>
+    <string name="loadMessageGetHighScore">Loading high score …</string>
+    <string name="loadMessageReadNewEvent">Checking QR content …</string>
+    <string name="loadMessageMediaUpload">Storing media …</string>
+    <string name="loadMessageSetTeamEmail">Storing team email …</string>
+    <string name="loadMessageSetTeamName">Storing team name …</string>
+    <string name="loadMessageSetTeamParticipants">Storing team participants …</string>
+    <string name="loadMessageSetTeamPhoto">Storing team photo …</string>
+    <string name="loadMessageUnpacking">Unpacking …</string>
+    <string name="loadMessageUploadImage">Uploading photo …</string>
+    <string name="loadMessageUploadVideo">Uploading video …</string>
+
+    <!-- JSON Response error (codes), lookup using "error_code_"+errorCode -->
+    <string name="anErrorOccurred">An error occurred.</string>
+    <string name="errorAlertConnectionProblems">Connection problems occurred. Try again.</string>
+    <string name="errorAlertNoWritableSdcard">No writable SD card is detected. You cannot solve this task.</string>
+    <string name="errorCodeAlreadyExists">This username already exists. Please enter another one.</string>
+    <string name="errorCodeCantPlayAgain">You have already passed this waypoint.</string>
+    <string name="errorCodeCombatSpotAlreadySolvedTitle">Too late!</string>
+    <string name="errorCodeCombatSpotAlreadySolved">This waypoint was already solved by another team.</string>
+    <string name="errorCodeEmailAddressDotAtom">Invalid email address.</string>
+    <string name="errorCodeEmailAddressInvalidFormat">Invalid email address.</string>
+    <string name="errorCodeEmailAddressInvalidHostname">Invalid email address.</string>
+    <string name="errorCodeEmailAddressInvalidLocalPart">Invalid email address.</string>
+    <string name="errorCodeEmailAddressInvalidMxRecord">Invalid email address.</string>
+    <string name="errorCodeEmailAddressInvalidSegment">Invalid email address.</string>
+    <string name="errorCodeEmailAddressLengthExceeded">Invalid email address.</string>
+    <string name="errorCodeEmailAddressQuotedString">Invalid email address.</string>
+    <string name="errorCodeEmailExists">This email address already exists. Please enter another one.</string>
+    <string name="errorCodeEmailUnknown">We don\'t recognise this email address.</string>
+    <string name="errorCodeError">An unknown error occurred.</string>
+    <string name="errorCodeEventIsInactive">Sorry, this event is now finished. These points cannot be counted.</string>
+    <string name="errorCodeEventIsPaused">Sorry, this event is paused. Please wait for the operator to continue.</string>
+    <string name="errorCodeInvalidCredentials">Login credentials are not valid.</string>
+    <string name="errorCodeIsEmpty">This field cannot be left blank.</string>
+    <string name="errorCodeMaxPointsReached">You achieved the maximum score for playing without registration. If you wish to continue, please log in with a registered account now.</string>
+    <string name="errorCodeNoAccessForPhotographers">Sorry, you are logged in as photographer. Your points cannot be counted.</string>
+    <string name="errorCodeNoEventAccess">You do not have access to this event.</string>
+    <string name="errorCodeNoEventFound">No matching event found.</string>
+    <string name="errorCodeNoWaypointId">No waypoint ID transmitted.</string>
+    <string name="errorCodeNoWaypointMatching">Matching waypoint could not be found.</string>
+    <string name="errorCodeNotActive">This email address has not been verified. Please open the link in your verification email.</string>
+    <string name="errorCodeNotAlnum">Only alpha-numeric characters are accepted.</string>
+    <string name="errorCodeNotAlpha">Only letters are accepted.</string>
+    <string name="errorCodeNotDigits">Only numbers are accepted.</string>
+    <string name="errorCodeNotSame">The two passwords do not match.</string>
+    <string name="errorCodeOutOfMemory">OUT OF MEMORY</string>
+    <string name="errorCodePhoneNumberError">This phone number appears invalid.</string>
+    <string name="errorCodeQrNotAllowedByEventOwner">Registration for this QR code is not possible.</string>
+    <string name="errorCodeQrNotValid">This QR code is not valid.</string>
+    <string name="errorCodeQrOverused">Registration count of this QR code is exceeded.</string>
+    <string name="errorCodeQrRequired">QR code could not be received.</string>
+    <string name="errorCodeSolvingAsPhotographer">Sorry, you are logged in as photographer. Your points cannot be counted.</string>
+    <string name="errorCodeTeamIsPlayer">You can not leave this gallery since you are registered as a team for this event.</string>
+    <string name="errorCodeWaypointPassed">You passed this waypoint. Try the next one.</string>
+    <string name="noInternetConnection">No internet connection.</string>
+    <string name="noInternetConnectionOk">You have no internet connection.</string>
+    <string name="noInternetConnectionTryAgain">You have no internet connection. Do you want to try again?</string>
+    <string name="waypointPassed">You passed this waypoint. Try the next one.</string>
+
+    <string name="operationNotAllowed">This action is currently not available.</string>
+    <string name="eventErrorLoading">This event could not be loaded, the standard event will be used instead.</string>
+
+    <!-- WHAT?!?-->
+    <string name="msgTechnicalError">Connectivity problems occurred. Try again.</string>
+    <!---->
 
 </resources>

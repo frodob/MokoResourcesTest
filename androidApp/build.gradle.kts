@@ -3,7 +3,7 @@ plugins {
     kotlin("android")
 //    id("kotlin-android-extensions")
 }
-group = "com.espoto.espotoproject"
+group = "com.mokoresourcestest"
 version = "1.0"
 
 repositories {
@@ -15,7 +15,7 @@ repositories {
 android {
     compileSdkVersion(Deps.Android.compileSdk)
     defaultConfig {
-        applicationId = "com.espoto.espotoproject"
+        applicationId = "com.mokoresourcestest"
         minSdkVersion(Deps.Android.minSdk)
         targetSdkVersion(Deps.Android.targetSdk)
         versionCode = 1

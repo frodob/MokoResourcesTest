@@ -1,4 +1,4 @@
-package com.espoto.mokoresourcestest.SharedCode
+package com.mokoresourcestest
 
 actual class Platform actual constructor() {
     actual val platform: String = "Android ${android.os.Build.VERSION.SDK_INT}"

@@ -1,13 +1,12 @@
-package com.espoto.mokoresourcestest.androidApp
+package com.mokoresourcestest
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.espoto.mokoresourcestest.SharedCode.Greeting
 import android.widget.TextView
-import com.espoto.resources.MR
-import dev.icerock.moko.resources.desc.Plural
-import dev.icerock.moko.resources.desc.Resource
+import androidx.appcompat.app.AppCompatActivity
+import com.espoto.mokoresourcestest.androidApp.R
+import dev.icerock.moko.resources.desc.PluralFormatted
 import dev.icerock.moko.resources.desc.StringDesc
+import resources.generated.MR
 
 fun greet(): String {
     return Greeting().greeting()
@@ -19,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val tv: TextView = findViewById(R.id.text_view)
-        tv.text = StringDesc.Plural(MR.plurals.my_plural, 1).toString(this)
+//        tv.text = StringDesc.PluralFormatted(MR.plurals.solveMcFull, 1, 1).toString(this)
+        tv.text = Greeting().greeting()
     }
 }

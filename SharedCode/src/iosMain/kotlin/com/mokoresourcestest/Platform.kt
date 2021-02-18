@@ -1,5 +1,4 @@
-package com.espoto.mokoresourcestest.SharedCode
-
+package com.mokoresourcestest
 
 import platform.UIKit.UIDevice
 
