@@ -100,12 +100,13 @@ kotlin {
 //        pod("AppCenter", "~> 3.0.0")
 //        pod("CocoaLumberjack", "3.5.3")
 //        pod("UnzipKit")
-//        pod("Starscream", "4.0.0")
+        // -> Exception in thread "main" java.lang.Error: /var/folders/j7/fqrxk_js0sn4r2blxl4kq0fm0000gn/T/12780973100919437403.m:1:9: fatal error: module 'UnzipKit' not found
 
         // https://kotlinlang.org/docs/native-cocoapods.html#add-a-dependency-on-a-pod-library-from-the-cocoapods-repository
-//        pod("AFNetworking") {
-//            version = "~> 4.0.1"
-//        }
+        pod("AFNetworking") {
+            version = "~> 4.0.1"
+        }
+        // -> Exception in thread "main" java.lang.Error: /var/folders/j7/fqrxk_js0sn4r2blxl4kq0fm0000gn/T/18314343980925505998.m:1:9: fatal error: module 'AFNetworking' not found
     }
 }
 
