@@ -1,9 +1,9 @@
 plugins {
-    plugin(Deps.Plugins.kotlinMultiplatform)
-    plugin(Deps.Plugins.kotlinSerialization)
     plugin(Deps.Plugins.androidLibrary)
-    plugin(Deps.Plugins.kotlinAndroidExtensions)
+    plugin(Deps.Plugins.kotlinMultiplatform)
     plugin(Deps.Plugins.cocoapods)
+    plugin(Deps.Plugins.kotlinSerialization)
+    plugin(Deps.Plugins.kotlinAndroidExtensions)
     plugin(Deps.Plugins.sqlDelight)
     plugin(Deps.Plugins.mokoResources)
 }
@@ -14,13 +14,15 @@ version = "1.0.0"
 repositories {
     gradlePluginPortal()
     google()
-    jcenter()
     mavenCentral()
 }
 
 kotlin {
     android()
     ios()
+//    val onPhone = System.getenv("SDK_NAME")?.startsWith("iphoneos") ?: false
+//    if (onPhone) iosArm64("ios")
+//    else iosX64("ios")
 
     sourceSets {
         val commonMain by getting {
@@ -28,7 +30,9 @@ kotlin {
 
                 // Coroutines
                 implementation(Deps.Libs.MultiPlatform.coroutines) {
-                    isForce = true
+                    version {
+                        strictly(Deps.Version.coroutines)
+                    }
                 }
 
                 // Ktor
@@ -50,8 +54,8 @@ kotlin {
                 implementation(Deps.Libs.MultiPlatform.klock)
 
                 api(Deps.Libs.MultiPlatform.mokoResources.common)
-                implementation(Deps.Libs.MultiPlatform.mokoGraphics.common)
-                implementation(Deps.Libs.MultiPlatform.mokoParcelize.common)
+                api(Deps.Libs.MultiPlatform.mokoGraphics.common)
+                api(Deps.Libs.MultiPlatform.mokoParcelize.common)
             }
         }
         val commonTest by getting {
@@ -69,6 +73,8 @@ kotlin {
 //                }
                 implementation(Deps.Libs.Ktor.androidClient)
                 implementation(Deps.Libs.SqlDelight.androidDriver)
+                implementation(Deps.Libs.Android.lifecycle)
+                implementation(Deps.Libs.Android.viewModel)
             }
         }
         val androidTest by getting {
@@ -88,25 +94,25 @@ kotlin {
     }
 
     cocoapods {
-        ios.deploymentTarget = "13.0"
         summary = "Shared module for Android and iOS"
         homepage = "..."
         // You can change the name of the produced framework.
         // By default, it is the name of the Gradle project.
         frameworkName = "SharedCode"
+        ios.deploymentTarget = "12.0"
 
+        // https://kotlinlang.org/docs/native-cocoapods.html#add-a-dependency-on-a-pod-library-from-the-cocoapods-repository
+        // https://kotlinlang.org/docs/native-cocoapods.html
         // https://youtrack.jetbrains.com/issue/KT-40594
         // https://stackoverflow.com/questions/60126503/how-to-add-thirdparty-ios-pod-library-into-kotlin-native-project-getting-error
 //        pod("AppCenter", "~> 3.0.0")
 //        pod("CocoaLumberjack", "3.5.3")
+//        pod("AFNetworking", "~> 4.0.1")
+//        pod("Reachability", version = "~> 3.2")
 //        pod("UnzipKit")
-        // -> Exception in thread "main" java.lang.Error: /var/folders/j7/fqrxk_js0sn4r2blxl4kq0fm0000gn/T/12780973100919437403.m:1:9: fatal error: module 'UnzipKit' not found
+//        pod("Starscream", "4.0.0")
 
-        // https://kotlinlang.org/docs/native-cocoapods.html#add-a-dependency-on-a-pod-library-from-the-cocoapods-repository
-        pod("AFNetworking") {
-            version = "~> 4.0.1"
-        }
-        // -> Exception in thread "main" java.lang.Error: /var/folders/j7/fqrxk_js0sn4r2blxl4kq0fm0000gn/T/18314343980925505998.m:1:9: fatal error: module 'AFNetworking' not found
+        // https://stackoverflow.com/questions/34509310/cocoapods-pod-update-installs-old-pods
     }
 }
 
@@ -123,12 +129,12 @@ multiplatformResources {
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(Deps.Android.compileSdk)
 //    buildToolsVersion("29.0.3")
 
     defaultConfig {
-        minSdkVersion(19)
-        targetSdkVersion(29)
+        minSdkVersion(Deps.Android.minSdk)
+        targetSdkVersion(Deps.Android.targetSdk)
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

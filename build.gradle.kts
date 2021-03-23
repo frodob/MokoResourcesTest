@@ -2,12 +2,12 @@ buildscript {
     repositories {
         gradlePluginPortal()
         google()
-        jcenter()
+//        jcenter()
         mavenCentral()
         maven(url = "https://dl.bintray.com/icerockdev/plugins")
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:4.2.0-beta04")
+        classpath("com.android.tools.build:gradle:4.2.0-beta06")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Deps.Version.kotlin}")
         classpath("org.jetbrains.kotlin:kotlin-serialization:${Deps.Version.kotlin}")
         classpath("com.squareup.sqldelight:gradle-plugin:${Deps.Version.sqlDelight}")
@@ -22,7 +22,7 @@ version = "1.0-SNAPSHOT"
 allprojects {
     repositories {
         google()
-        jcenter()
+//        jcenter()
         mavenCentral()
         maven(url = "https://jitpack.io")
         maven(url = "https://dl.bintray.com/icerockdev/moko")

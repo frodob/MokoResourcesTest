@@ -3,7 +3,7 @@
  */
 object Deps {
     object Version {
-        const val kotlin = "1.4.21"
+        const val kotlin = "1.4.31"
         const val gradle = "4.1.1"
 
         const val androidAppCompat = "1.2.0"
@@ -14,24 +14,29 @@ object Deps {
         const val lifecycle = "2.2.0"
         const val glide = "4.9.0"
 
-        const val compose = "1.0.0-alpha10"
-        const val nav_compose = "1.0.0-alpha05"
-        const val accompanist = "0.4.2"
+        const val compose = "1.0.0-beta02"
+        const val composeActivity = "1.3.0-alpha03"
+        const val composeConstraint = "1.0.0-alpha03"
+        const val composeNavigation = "1.0.0-alpha05"
 
         const val espressoCore = "3.2.0"
         const val testRunner = "1.2.0"
         const val testExtJunit = "1.1.1"
 
-        const val ktorClient = "1.5.0"              // https://github.com/ktorio/ktor
-        const val coroutines = "1.4.2-native-mt"    // https://github.com/Kotlin/kotlinx.coroutines     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
-        const val kotlinxSerialization = "1.0.1"    // https://github.com/Kotlin/kotlinx.serialization  // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-core
+        const val ktorClient = "1.5.2"              // https://github.com/ktorio/ktor
+        const val coroutines =
+            "1.4.3-native-mt"    // https://github.com/Kotlin/kotlinx.coroutines     // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core
+        const val kotlinxSerialization =
+            "1.0.1"    // https://github.com/Kotlin/kotlinx.serialization  // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-serialization-core
         const val kotlinxDateTime = "0.1.0"         // https://github.com/Kotlin/kotlinx-datetime
 
         const val sqlDelight = "1.4.4"              // https://github.com/cashapp/sqldelight
         const val klock = "2.0.0-alpha"             // https://github.com/korlibs/klock
         const val uuid = "0.2.2"                    // https://github.com/benasher44/uuid
-        const val prefs = "1.2.0"                   // https://github.com/florent37/Multiplatform-Preferences
-        const val krypto = "1.12.0"                 // https://github.com/korlibs/krypto  // https://mvnrepository.com/artifact/com.soywiz.korlibs.krypto/krypto
+        const val prefs =
+            "1.2.0"                   // https://github.com/florent37/Multiplatform-Preferences
+        const val krypto =
+            "1.12.0"                 // https://github.com/korlibs/krypto  // https://mvnrepository.com/artifact/com.soywiz.korlibs.krypto/krypto
 
         const val mokoMPP = "0.8.0"
         const val mokoGraphics = "0.5.0"            // https://github.com/icerockdev/moko-graphics
@@ -118,16 +123,17 @@ object Deps {
             const val jodaTime = "net.danlew:android.joda:2.10.3"
 
             object Compose {
+                const val activity = "androidx.activity:activity-compose:${Version.composeActivity}"
                 const val ui = "androidx.compose.ui:ui:${Version.compose}"
-                const val tooling = "androidx.ui:ui-tooling:${Version.compose}"
 
+//                const val tooling = "androidx.ui:ui-tooling:${Version.compose}"
                 // Tooling support (Previews, etc.)
                 const val uiTooling = "androidx.compose.ui:ui-tooling:${Version.compose}"
                 const val uiGraphics = "androidx.compose.ui:ui-graphics:${Version.compose}"
 
                 // Foundation (Border, Background, Box, Image, Scroll, shapes, animations, etc.)
-                const val foundationLayout =
-                    "androidx.compose.foundation:foundation-layout:${Version.compose}"
+                const val foundationLayout = "androidx.compose.foundation:foundation-layout:${Version.compose}"
+                const val constraintLayout = "androidx.constraintlayout:constraintlayout-compose:${Version.composeConstraint}"
 
                 // Material Design
                 const val material = "androidx.compose.material:material:${Version.compose}"
@@ -144,8 +150,6 @@ object Deps {
                 const val runtimeRx = "androidx.compose.runtime:runtime-rxjava2:${Version.compose}"
 
                 const val runtime = "androidx.compose.runtime:runtime:${Version.compose}"
-                const val layout =
-                    "androidx.compose.foundation:foundation-layout:${Version.compose}"
                 const val animation = "androidx.compose.animation:animation:${Version.compose}"
 
 //                const val navigation = "androidx.navigation:navigation-compose:${Version.nav_compose}"
