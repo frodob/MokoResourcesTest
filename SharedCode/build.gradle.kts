@@ -107,7 +107,7 @@ kotlin {
         // https://stackoverflow.com/questions/60126503/how-to-add-thirdparty-ios-pod-library-into-kotlin-native-project-getting-error
 //        pod("AppCenter", "~> 3.0.0")
 //        pod("CocoaLumberjack", "3.5.3")
-//        pod("AFNetworking", "~> 4.0.1")
+        pod("AFNetworking", "~> 4.0.1")
 //        pod("Reachability", version = "~> 3.2")
 //        pod("UnzipKit")
 //        pod("Starscream", "4.0.0")
