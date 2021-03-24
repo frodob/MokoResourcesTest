@@ -44,7 +44,7 @@ android {
 
     composeOptions {
         kotlinCompilerExtensionVersion = Deps.Version.compose
-        kotlinCompilerVersion  = "1.4.21"
+        kotlinCompilerVersion  = Deps.Version.kotlin
     }
 
     packagingOptions {
