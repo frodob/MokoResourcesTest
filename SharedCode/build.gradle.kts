@@ -19,10 +19,10 @@ repositories {
 
 kotlin {
     android()
-    ios()
-//    val onPhone = System.getenv("SDK_NAME")?.startsWith("iphoneos") ?: false
-//    if (onPhone) iosArm64("ios")
-//    else iosX64("ios")
+//    ios()
+    val onPhone = System.getenv("SDK_NAME")?.startsWith("iphoneos") ?: false
+    if (onPhone) iosArm64("ios")
+    else iosX64("ios")
 
     sourceSets {
         val commonMain by getting {
@@ -101,13 +101,12 @@ kotlin {
         // By default, it is the name of the Gradle project.
         frameworkName = "SharedCode"
 
-        // https://kotlinlang.org/docs/native-cocoapods.html#add-a-dependency-on-a-pod-library-from-the-cocoapods-repository
         // https://kotlinlang.org/docs/native-cocoapods.html
         // https://youtrack.jetbrains.com/issue/KT-40594
         // https://stackoverflow.com/questions/60126503/how-to-add-thirdparty-ios-pod-library-into-kotlin-native-project-getting-error
 //        pod("AppCenter", "~> 3.0.0")
 //        pod("CocoaLumberjack", "3.5.3")
-        pod("AFNetworking", "~> 4.0.1")
+//        pod("AFNetworking", "~> 4.0.1")
 //        pod("Reachability", version = "~> 3.2")
 //        pod("UnzipKit")
 //        pod("Starscream", "4.0.0")

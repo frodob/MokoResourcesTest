@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A7C94BBAAD083EEA98AAC1C /* libPods-ios-iosApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED2B379169805B703538F7E /* libPods-ios-iosApp.a */; };
+		11266E187E897A67DC3765A8 /* Pods_ios_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98099AB4D5B2E9CD1A221A74 /* Pods_ios_iosApp.framework */; };
 		7555FF7F242A565900829871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF7E242A565900829871 /* AppDelegate.swift */; };
 		7555FF81242A565900829871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF80242A565900829871 /* SceneDelegate.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ED2B379169805B703538F7E /* libPods-ios-iosApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ios-iosApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		448A6B551706333E6D859A91 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		62134F340C79C9021161417A /* Pods-ios-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-iosApp.release.xcconfig"; path = "Target Support Files/Pods-ios-iosApp/Pods-ios-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +53,7 @@
 		7555FFA0242A565B00829871 /* iosAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppUITests.swift; sourceTree = "<group>"; };
 		7555FFA2242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7555FFB1242A642300829871 /* SharedCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharedCode.framework; path = "../SharedCode/build/xcode-frameworks/SharedCode.framework"; sourceTree = "<group>"; };
+		98099AB4D5B2E9CD1A221A74 /* Pods_ios_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A385C81032BB72747980BD5F /* Pods-ios-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-ios-iosApp/Pods-ios-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B58F5C18FC8CA4926309871D /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7C94BBAAD083EEA98AAC1C /* libPods-ios-iosApp.a in Frameworks */,
+				11266E187E897A67DC3765A8 /* Pods_ios_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7555FFB1242A642300829871 /* SharedCode.framework */,
-				1ED2B379169805B703538F7E /* libPods-ios-iosApp.a */,
+				98099AB4D5B2E9CD1A221A74 /* Pods_ios_iosApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +178,7 @@
 				7555FF78242A565900829871 /* Frameworks */,
 				7555FF79242A565900829871 /* Resources */,
 				507679EA25B8C24B002A5CD4 /* moko-resources copy bundles */,
+				93AA9E84970FDA8C164DE072 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -353,6 +354,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"SRCROOT: $SRCROOT/../gradlew\"\necho \"PLATFORM_NAME: $PLATFORM_NAME\"\necho \"CONFIGURATION: $CONFIGURATION\"\necho \"BUILT_PRODUCTS_DIR: $BUILT_PRODUCTS_DIR\"\necho \"CONTENTS_FOLDER_PATH: $CONTENTS_FOLDER_PATH\"\necho \"KOTLIN_TARGET: $KOTLIN_TARGET\"\necho \"OTHER_CFLAGS: $OTHER_CFLAGS\"\necho \"HEADER_SEARCH_PATHS: $HEADER_SEARCH_PATHS\"\necho \"FRAMEWORK_SEARCH_PATHS: $FRAMEWORK_SEARCH_PATHS\"\necho \"----------------------\"\n\n\"$SRCROOT/../gradlew\" -p \"$SRCROOT/../\" :SharedCode:copyFrameworkResourcesToApp \\\n    -Pmoko.resources.PLATFORM_NAME=$PLATFORM_NAME \\\n    -Pmoko.resources.CONFIGURATION=$CONFIGURATION \\\n    -Pmoko.resources.BUILT_PRODUCTS_DIR=$BUILT_PRODUCTS_DIR \\\n    -Pmoko.resources.CONTENTS_FOLDER_PATH=$CONTENTS_FOLDER_PATH\\\n    -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET \\\n    -Pkotlin.native.cocoapods.configuration=$CONFIGURATION \\\n    -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\" \\\n    -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\" \\\n    -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
+		};
+		93AA9E84970FDA8C164DE072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-iosApp/Pods-ios-iosApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios-iosApp/Pods-ios-iosApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios-iosApp/Pods-ios-iosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

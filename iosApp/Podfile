@@ -3,7 +3,7 @@ platform :ios, '13.0'
 project 'iosApp.xcodeproj'
 
 # source 'https://github.com/CocoaPods/Specs.git'
-# use_frameworks!
+use_frameworks!
 
 abstract_target 'ios' do
 
