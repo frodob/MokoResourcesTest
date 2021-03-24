@@ -96,10 +96,10 @@ kotlin {
     cocoapods {
         summary = "Shared module for Android and iOS"
         homepage = "..."
+        ios.deploymentTarget = "13.0"
         // You can change the name of the produced framework.
         // By default, it is the name of the Gradle project.
         frameworkName = "SharedCode"
-        ios.deploymentTarget = "12.0"
 
         // https://kotlinlang.org/docs/native-cocoapods.html#add-a-dependency-on-a-pod-library-from-the-cocoapods-repository
         // https://kotlinlang.org/docs/native-cocoapods.html
@@ -111,6 +111,8 @@ kotlin {
 //        pod("Reachability", version = "~> 3.2")
 //        pod("UnzipKit")
 //        pod("Starscream", "4.0.0")
+
+        podfile = project.file("../iosApp/Podfile")
 
         // https://stackoverflow.com/questions/34509310/cocoapods-pod-update-installs-old-pods
     }
